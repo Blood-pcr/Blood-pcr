@@ -66,9 +66,68 @@
 
         <script>
             //ex5
-            let palavras 
-        
+            let palavras= ["gato", "cão", "pássaro"];
+            let contador=[];
+            for (let i=0;i<palavras.length;i++){
+                contador.push(palavras[i].length);
+            }
+            console.log(contador);
              //fimex5
             </script>
+            </script>
+            <div>
+            <h2>ex1</h2>
+                <input type="text" id="email" placeholder="Digite seu email">
+                <button  type="submit"  onclick="validarEmail()">Validar</button>
+                <p id="mensagem"></p>
+                <script>
+                   function validarEmail() {
+                const validaçao = document.getElementById("email").value;
+                if (validaçao.includes("@") && validaçao.includes(".com")){
+    
+                    document.getElementById("mensagem").innerHTML="Email válido!";
+                } else {
+                    document.getElementById("mensagem").innerHTML="Email inválido!";
+                }
+            }
+            console.log();
+                </script>
+            <h2>fimex1</h2>
+            </div>   
+            <div>
+                <h1>ex2</h1>
+                <form id="meuFormulario">
+                    <input type="text" id="nome" placeholder="Nome">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="number" id="idade" placeholder="Idade">
+                    <button type="button" id="exibirDados">Exibir Dados</button>
+                   </form>
+                   <ul id="listaDados"></ul>
+                   <h2 id=""></h2>
+                   <button type="submit"  onclick="">Exibir Dados</button>
+                   <script>
+       
+                    function tosemideia(){
+             
+                        const name = document.getElementById("nome");
+
+                        const email = document.getElementById("email");
+                        const msg = document.getElementById("mensagemErro");
+             
+                        if (nome.value.trim() == "" || mail.value.trim() == ""){
+             
+                            msg.innerHTML = "Preencha todos os campos!";
+             
+                        } else{
+                            msg.innerHTML = "Sucesso!"
+                        }
+                    }
+             
+                   </script>
+                   </script>
+                   <h1>ex2</h1>
+            </div>  
+            
+
 </body>
 </html>
